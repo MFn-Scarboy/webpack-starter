@@ -1,6 +1,85 @@
-$body-color: slateblue;
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://fonts.google.com/specimen/Roboto?selection.family=Roboto');
+}
 
 body {
-  color: $body-color;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+#background {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  position: fixed;
+}
+
+#narr-div {
+  color: #00669D;
+  background-color: white;
+  width: 40vw;
+  border-radius: 0 0 5px 5px;
+  padding: 0 10px 10px 15px;
+  margin: 0;
+  display: flex;
+  position: absolute;
+  left: 30%;
+  
+  p {
+    padding-left: 25px;
+    font-size: 15px;
+  }
+}
+
+#narr-img {
+  height: 60px
+}
+
+.dip {
+  height: 200px;
+  width: 210px;
+  padding-left: 30px;
+}
+
+.dip-div {
+  display: flex;
+
+  .selected {
+    position: absolute;
+    color: white;
+    margin-left: 1.6%;
+    margin-top: 8%;
+    background-color: rgba(255, 135, 28, 0.65);
+    padding: 15px 12px 19px 68px;
+    width: 7%;
+    // display: none;
+  }
+}
+
+.row {
+  display: flex;
+  padding-left: 30.5%;
+  padding-bottom: 30px;
+}
+
+#row-1 {
+  padding-top: 100px;
+}
+
+#button-div {
+  padding-left: 45.5%;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  color: white;
+  background-color: #FF871C;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  justify-content: center;
+  align-content: center;
 }

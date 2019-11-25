@@ -4,9 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>webpack starterkit</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>webpack starter</h1>
-  <p>✨ A lightweight foundation for your next webpack based frontend project.</p>
+  <div id="main-div">
+    <img id="background" src="../public/images/img_bg_moodboard_simple.jpg" alt="">
+    
+    <div id="narr-div">
+      <img id="narr-img" src="../public/images/img_narrator_female.png" alt="">
+      <p>What kind of dips and spreads do you eat regularly? Pick your favorite 4.</p>
+    </div>
+    
+    <div class="row" id="row-1">
+      <div class="dip-div">
+        <img onclick="toggleDisplay()" class="dip" src="../public/images/img_dip_baba_ganoush.png" alt="">
+        <p class="selected"><b>selected</b></p>
+      </div>
+      <div class="dip-div">
+        <img class="dip" src="../public/images/img_dip_cream_cheese.png" alt="">
+        <p class="selected"><b>selected</b></p>
+      </div>
+      <div class="dip-div">
+        <img class="dip" src="../public/images/img_dip_guacamole.png" alt="">
+        <p class="selected"><b>selected</b></p>
+      </div>
+    </div>
+
+    <div class="row" id="row-2">
+      <div class="dip-div">
+        <img class="dip" src="../public/images/img_dip_cheese.png" alt="">
+        <p class="selected"><b>selected</b></p>
+      </div>
+      <div class="dip-div">
+        <img class="dip" src="../public/images/img_dip_artichoke.png" alt="">
+        <p class="selected"><b>selected</b></p>
+      </div>
+      <div class="dip-div">
+        <img class="dip" src="../public/images/img_dip_tzatziki.png" alt="">
+        <p class="selected"><b>selected</b></p>
+      </div>
+    </div>
+
+    <div class="row" id="row-3">
+      <div class="dip-div">
+          <img class="dip" src="../public/images/img_dip_bean.png" alt="">
+          <p class="selected"><b>selected</b></p>
+      </div>
+      <div class="dip-div">
+          <img class="dip" src="../public/images/img_dip_salsa.png" alt="">
+          <p class="selected"><b>selected</b></p>
+      </div>
+      <div class="dip-div">
+          <img class="dip" src="../public/images/img_dip_hummus.png" alt="">
+          <p class="selected"><b>selected</b></p>
+      </div>
+    </div>
+
+    <div id="button-div">
+      <button><b>next</b></button>
+    </div>
+  </div>
+
+  <script src="scripts/index.js"></script>
 </body>
 </html>
